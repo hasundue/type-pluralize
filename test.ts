@@ -1,9 +1,4 @@
-import { assertEquals } from "https://deno.land/std@0.147.0/testing/asserts.ts";
-import { main } from "./mod.ts";
+import { Pluralize } from "./mod.ts";
 
-Deno.test("hello()", () => {
-  assertEquals(
-    main(),
-    "Hello, World!",
-  );
-});
+const test: Pluralize<"test"> = "tests";
+const tests: Pluralize<"tests"> = "tests";
